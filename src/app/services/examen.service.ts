@@ -10,7 +10,7 @@ import { CommonService } from './common.service';
 })
 export class ExamenService extends CommonService<Examen>{
   //Valor de nuestra ruta a spring
-  protected baseEndpoint = 'http://localhost:8090/api/examenes';
+  protected baseEndpoint = 'https://fsistemaevaluacion.herokuapp.com/';
   
   constructor(http: HttpClient) { 
     super(http);
