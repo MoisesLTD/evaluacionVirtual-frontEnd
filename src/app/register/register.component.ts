@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
   }
 
   onSubmit(): void {
-    this.authService./alumno(this.form).subscribe(
+    this.authService.register(this.form).subscribe(
       data => {
         console.log(data);
         this.isSuccessful = true;
