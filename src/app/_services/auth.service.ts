@@ -2,7 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-const AUTH_API = 'https://fsistemaevaluacion.herokuapp.com/'; 
+const AUTH_API = 'https://backend-security-dot-macro-gadget-309302.ts.r.appspot.com/api/auth/'; 
 
 const httpOptions = {
   headers: new HttpHeaders({ 'Content-Type': 'application/json' })
