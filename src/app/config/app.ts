@@ -1,1 +1,1 @@
-export const BASE_ENDPOINT = 'https://rocky-ravine-18108.herokuapp.com/';
+export const BASE_ENDPOINT = 'https://rocky-ravine-18108.herokuapp.com';
