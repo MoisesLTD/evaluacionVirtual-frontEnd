@@ -5,14 +5,13 @@ import { BASE_ENDPOINT } from '../config/app';
 import { Alumno } from '../models/alumno';
 import { CommonService } from './common.service';
 
-const base_url = 'https://backend-dot-macro-gadget-309302.ts.r.appspot.com/api/alumnos';
-
 @Injectable({
   providedIn: 'root'
 })
 
 export class AlumnoService extends CommonService<Alumno>{
   //Valor de nuestra ruta a spring
+  protected baseEndpoint = BASE_ENDPOINT;
   
   constructor(http: HttpClient) {
     super(http);
@@ -24,7 +23,7 @@ export class AlumnoService extends CommonService<Alumno>{
      formData.append('nombre', alumno.nombre);
      formData.append('apellido', alumno.apellido);
      formData.append('email', alumno.email);
-     return this.http.post<Alumno>(base_url + '/crear-con-foto',
+     return this.http.post<Alumno>(this.baseEndpoint + '/crear-con-foto',
       formData);
    }
 
@@ -34,12 +33,12 @@ export class AlumnoService extends CommonService<Alumno>{
     formData.append('nombre', alumno.nombre);
     formData.append('apellido', alumno.apellido);
     formData.append('email', alumno.email);
-    return this.http.put<Alumno>(`${base_url}/editar-con-foto/${alumno.id}`,
+    return this.http.put<Alumno>(`${this.baseEndpoint}/editar-con-foto/${alumno.id}`,
      formData);
   }
 
   public filtrarPorNombre(nombre: string): Observable<Alumno[]>{
-    return this.http.get<Alumno[]>(`${base_url}/filtrar/${nombre}`);
+    return this.http.get<Alumno[]>(`${this.baseEndpoint}/filtrar/${nombre}`);
   }
   
 }
