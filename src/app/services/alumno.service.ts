@@ -11,7 +11,7 @@ import { CommonService } from './common.service';
 
 export class AlumnoService extends CommonService<Alumno>{
   //Valor de nuestra ruta a spring
-  protected baseEndpoint = BASE_ENDPOINT;
+  protected baseEndpoint = BASE_ENDPOINT + '/alumnos';
   
   constructor(http: HttpClient) {
     super(http);
