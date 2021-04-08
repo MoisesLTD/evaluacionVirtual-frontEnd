@@ -13,7 +13,7 @@ import { BASE_ENDPOINT } from 'src/app/config/app';
 export class AlumnosComponent 
 extends CommonListarComponent<Alumno, AlumnoService> implements OnInit {
   
-  baseEndpoint = 'https://backend-dot-macro-gadget-309302.ts.r.appspot.com/api/alumnos';
+  baseEndpoint = 'https://back-alumnos-dot-microserviciosdeploy.rj.r.appspot.com/api/alumnos';
   constructor(service: AlumnoService) {
     super(service);
     this.titulo = 'Alumnos';
