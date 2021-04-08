@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
-const API_URL = 'https://backend-security-dot-macro-gadget-309302.ts.r.appspot.com/api/test/';
+const API_URL = 'https://back-security-dot-microserviciosdeploy.rj.r.appspot.com/api/test/';
 
 @Injectable({
   providedIn: 'root'
