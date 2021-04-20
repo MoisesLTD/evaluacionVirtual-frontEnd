@@ -1,1 +1,1 @@
-export const BASE_ENDPOINT = 'https://back-alumnos-dot-microserviciosdeploy.rj.r.appspot.com/api/alumnos';
+export const BASE_ENDPOINT = 'https://back-alumnos-dot-rugged-weft-311315.rj.r.appspot.com/api/alumnos';

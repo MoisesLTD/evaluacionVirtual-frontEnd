@@ -10,7 +10,7 @@ import { CommonService } from './common.service';
 })
 export class ExamenService extends CommonService<Examen>{
   //Valor de nuestra ruta a spring
-  protected baseEndpoint = 'https://back-examenes-dot-microserviciosdeploy.rj.r.appspot.com/api/examenes';
+  protected baseEndpoint = 'https://back-examenes-dot-rugged-weft-311315.rj.r.appspot.com/api/examenes';
   
   constructor(http: HttpClient) { 
     super(http);
