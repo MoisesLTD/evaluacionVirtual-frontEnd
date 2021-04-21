@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { CommonService } from './common.service';
 import { Curso } from '../models/curso';
 import { HttpClient } from '@angular/common/http';
-import { BASE_ENDPOINT } from '../config/app';
 import { Alumno } from '../models/alumno';
 import { Observable } from 'rxjs';
 import { Examen } from '../models/examen';
@@ -12,7 +11,7 @@ import { Examen } from '../models/examen';
 })
 export class CursoService extends CommonService<Curso>{
   //Valor de nuestra ruta a spring
-  protected baseEndpoint = BASE_ENDPOINT + '/cursos';
+  protected baseEndpoint = 'https://back-cursos-dot-rugged-weft-311315.rj.r.appspot.com/api/cursos';
 
   constructor(http: HttpClient) { 
     super(http);

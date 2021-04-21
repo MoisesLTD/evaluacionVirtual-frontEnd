@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { BASE_ENDPOINT } from '../config/app';
 import { Alumno } from '../models/alumno';
 import { CommonService } from './common.service';
 

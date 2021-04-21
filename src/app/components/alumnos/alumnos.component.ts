@@ -2,7 +2,6 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { AlumnoService } from 'src/app/services/alumno.service';
 import { Alumno } from 'src/app/models/alumno';
 import { CommonListarComponent } from '../common-listar.component';
-import { BASE_ENDPOINT } from 'src/app/config/app';
 
 
 @Component({

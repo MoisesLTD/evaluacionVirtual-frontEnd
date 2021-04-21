@@ -1,7 +1,6 @@
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { BASE_ENDPOINT } from '../config/app';
 import { Alumno } from '../models/alumno';
 import { Examen } from '../models/examen';
 import { Respuesta } from '../models/respuesta';
@@ -13,7 +12,7 @@ export class RespuestaService {
 
   private cabeceras: HttpHeaders = new HttpHeaders({'Content-Type': 'application/json'});
 
-  private baseEndpoint = BASE_ENDPOINT + '/respuestas';
+  private baseEndpoint ='https://back-respuestas-dot-rugged-weft-311315.rj.r.appspot.com/api/respuestas';
 
   constructor(private http: HttpClient) { }
 
